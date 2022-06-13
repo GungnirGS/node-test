@@ -47,7 +47,7 @@ node .\dropcollection.js
 Record down the **token** returned to access the application as the user.
 
 ### Welcome Page
--- Set KEY = x-access-token and VALUE =  **token** in headers.
+- Set KEY = x-access-token and VALUE =  **token** in headers.
 - Send `welcome` request with header to get a welcome message with your account name and role.
 
 ### Update Password
