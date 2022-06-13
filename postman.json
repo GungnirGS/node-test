@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "ab438b59-18b7-4e6c-a28c-a2f8f4ba5bf7",
+		"name": "testapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21092285"
+	},
+	"item": [
+		{
+			"name": "newSubject",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhNjI0Yzc5ZTYzYzdhNDY1ZTgwMjJmIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTA1NTU1OSwiZXhwIjoxNjU1MDYyNzU5fQ.oJmGArgd-7ALCvpdUXXt5lAFBMmCN6A-L0aTkkKiP1A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"subject\": \"Geography\",\r\n    \"stream\": \"Science\",\r\n    \"created\": \"2022-06-12T17:30:00.000+08:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Http://127.0.0.1:8081/newSubject",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"newSubject"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"accname\": \"Admin1\",\r\n   \"password\": \"abc123\",\r\n   \"type\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Http://127.0.0.1:8081/register",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "\"user4\"",
+							"value": "{\"name\":\"mohit\",\"password\":\"password4\",\"profession\":\"teacher\",\"id\":4}",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"accname\": \"Admin1\",\r\n   \"password\": \"abc123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Http://127.0.0.1:8081/login",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "welcome",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNTk4ZGNmODcyMmYxZDY3ZWYxYTNjIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTA0MTY2NSwiZXhwIjoxNjU1MDQ4ODY1fQ.6c6vvyPwScWdejFpeCdAlbzuZLHAilM1TXDuLJON8bE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "Http://127.0.0.1:8081/welcome",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"welcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "newTraining",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNTk4ZGNmODcyMmYxZDY3ZWYxYTNjIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTAzODc3NiwiZXhwIjoxNjU1MDQ1OTc2fQ.PjAPbECwGexJ7X1-MHt6P_j2m1N3xr8xt4qfFHPya4c",
+						"description": "\n",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"The New Course\",\r\n    \"subjects\": [\r\n        {\"subject\": \"Geography\"},\r\n        {\"subject\": \"English\"},\r\n        {\"subject\": \"Maths\"}\r\n        ],\r\n    \"type\": \"Basic\",\r\n    \"created\": \"2022-06-12T17:30:00.000+08:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Http://127.0.0.1:8081/newTraining",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"newTraining"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findSubject",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNTk4ZGNmODcyMmYxZDY3ZWYxYTNjIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTA1MjU0NSwiZXhwIjoxNjU1MDU5NzQ1fQ.i5AnCZhaNT6b3VI-g9W2gqZkKOD4OrJyPKiELsXxp-A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sort\" : \"dsc\",\r\n    \"page\" : 1,\r\n    \"pageSize\" : 3\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Http://127.0.0.1:8081/findSubject",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"findSubject"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findTraining",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNTk4ZGNmODcyMmYxZDY3ZWYxYTNjIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTA0MTY2NSwiZXhwIjoxNjU1MDQ4ODY1fQ.6c6vvyPwScWdejFpeCdAlbzuZLHAilM1TXDuLJON8bE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sort\" : \"dsc\",\r\n    \"page\" : 0,\r\n    \"pageSize\" : 3,\r\n    \"filter\": \"stream\",\r\n    \"filterValue\" : \"Commerce\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Http://127.0.0.1:8081/findTraining",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"findTraining"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNTk4ZGNmODcyMmYxZDY3ZWYxYTNjIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTA1MjU0NSwiZXhwIjoxNjU1MDU5NzQ1fQ.i5AnCZhaNT6b3VI-g9W2gqZkKOD4OrJyPKiELsXxp-A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"accname\": \"Admin1\",\r\n   \"password\": \"abc123\",\r\n   \"newPassword\":\"abc123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Http://127.0.0.1:8081/updatePassword",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"updatePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateProfile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNTk4ZGNmODcyMmYxZDY3ZWYxYTNjIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTA1NTIwMSwiZXhwIjoxNjU1MDYyNDAxfQ.jIqoXAbQN20VCLW0xmp2CsdjKuFJBci1eQ4rzMBe7PI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Http://127.0.0.1:8081/updateProfile",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"updateProfile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"accname\": \"User1\",\r\n   \"password\": \"abc123\",\r\n   \"type\": \"basic\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Http://127.0.0.1:8081/register",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"register"
+					],
+					"query": [
+						{
+							"key": "\"user4\"",
+							"value": "{\"name\":\"mohit\",\"password\":\"password4\",\"profession\":\"teacher\",\"id\":4}",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
