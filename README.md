@@ -95,3 +95,9 @@ Record down the **token** returned to access the application as the user.
 ## Additional Notes
 1. `modified` field in subjects and courses collection is used to store the admin user that added the subject or course. It is automatically logged by the application. Entries populated by `populate.js` will leave that field empty.
 2. `created` field in subjects and courses collection is used to store the timestamp when the entry is added. The time used will be the current time and logged by the application.
+
+## Resources Used
+1. [How to Build an Authentication API with JWT Token in Node.js](https://www.section.io/engineering-education/how-to-build-authentication-api-with-jwt-token-in-nodejs/)
+2. [Mongoose](https://mongoosejs.com/) 
+3. [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) 
+4. [Node.js Tutorial](https://www.tutorialspoint.com/nodejs/index.htm)
