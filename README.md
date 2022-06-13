@@ -14,6 +14,11 @@ Test for NodeJS, ExpressJS and Mongoose
 - "jsonwebtoken": "^8.5.1",
 - "mongoose": "^6.3.6"
 
+## Assumptions
+1. A user collection is needed to store the user information when they register, login and update their account details.
+2. Get Training API is implemented using the same routing but category to be filtered is differentiated using a `filter` field.
+3. There are no limitation or control (for now) for a basic user to update their user type to admin using the update profile API.
+4. No login (JWT access token) is required when registering and logging in. Login is required for updating profile and password, querying for subjects and querying for training. Admin Login is required to add new subjects and add new training.
 
 ## How to run
 1. Download or clone the repository.
@@ -85,3 +90,8 @@ Record down the **token** returned to access the application as the user.
 - **dbschema.js** - defines the schema of collection using Mongoose.
 - **dropcollection.js** - utility script to drop all collection.
 - **populate.js** - utiltiy script to populate database with some data.
+
+
+## Additional Notes
+1. `modified` field in subjects and courses collection is used to store the admin user that added the subject or course. It is automatically logged by the application. Entries populated by `populate.js` will leave that field empty.
+2. `created` field in subjects and courses collection is used to store the timestamp when the entry is added. The time used will be the current time and logged by the application.
