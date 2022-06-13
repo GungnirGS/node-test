@@ -1,7 +1,17 @@
 require("dotenv").config();
-require("./database").conn();
+const dbModule = require("./database");
 const scm = require('./dbschema');
 
-scm.userModel.collection.drop();
-scm.subjectModel.collection.drop();
-scm.courseModel.collection.drop();
+
+dbModule.conn().then( async (db) => {
+
+    await scm.userModel.collection.drop();
+    await scm.subjectModel.collection.drop();
+    await scm.courseModel.collection.drop();
+    await db.disconnect();
+});
+
+
+
+
+

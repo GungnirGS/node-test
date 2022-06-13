@@ -13,13 +13,13 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhNjI0Yzc5ZTYzYzdhNDY1ZTgwMjJmIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTA1NTU1OSwiZXhwIjoxNjU1MDYyNzU5fQ.oJmGArgd-7ALCvpdUXXt5lAFBMmCN6A-L0aTkkKiP1A",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNzJlNzY4MWNmMTkzNjdmODI4ZWY5IiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTEyMzU3OCwiZXhwIjoxNjU1MTMwNzc4fQ.wDf8YAbDaI8B5MuiYhut1tC6iObDEe399uJREKgaSb0",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"subject\": \"Geography\",\r\n    \"stream\": \"Science\",\r\n    \"created\": \"2022-06-12T17:30:00.000+08:00\"\r\n}",
+					"raw": "{\r\n    \"subject\": \"Geography\",\r\n    \"stream\": \"Science\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -126,7 +126,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNTk4ZGNmODcyMmYxZDY3ZWYxYTNjIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTA0MTY2NSwiZXhwIjoxNjU1MDQ4ODY1fQ.6c6vvyPwScWdejFpeCdAlbzuZLHAilM1TXDuLJON8bE",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNzJlNzY4MWNmMTkzNjdmODI4ZWY5IiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTEyMzU3OCwiZXhwIjoxNjU1MTMwNzc4fQ.wDf8YAbDaI8B5MuiYhut1tC6iObDEe399uJREKgaSb0",
 						"type": "text"
 					}
 				],
@@ -154,14 +154,14 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNTk4ZGNmODcyMmYxZDY3ZWYxYTNjIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTAzODc3NiwiZXhwIjoxNjU1MDQ1OTc2fQ.PjAPbECwGexJ7X1-MHt6P_j2m1N3xr8xt4qfFHPya4c",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNzJlNzY4MWNmMTkzNjdmODI4ZWY5IiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTEyMzU3OCwiZXhwIjoxNjU1MTMwNzc4fQ.wDf8YAbDaI8B5MuiYhut1tC6iObDEe399uJREKgaSb0",
 						"description": "\n",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"The New Course\",\r\n    \"subjects\": [\r\n        {\"subject\": \"Geography\"},\r\n        {\"subject\": \"English\"},\r\n        {\"subject\": \"Maths\"}\r\n        ],\r\n    \"type\": \"Basic\",\r\n    \"created\": \"2022-06-12T17:30:00.000+08:00\"\r\n}",
+					"raw": "{\r\n    \"name\": \"The New Course\",\r\n    \"subjects\": [\r\n        {\"subject\": \"Geography\"},\r\n        {\"subject\": \"English\"},\r\n        {\"subject\": \"Maths\"}\r\n        ],\r\n    \"type\": \"Basic\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -195,7 +195,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNTk4ZGNmODcyMmYxZDY3ZWYxYTNjIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTA1MjU0NSwiZXhwIjoxNjU1MDU5NzQ1fQ.i5AnCZhaNT6b3VI-g9W2gqZkKOD4OrJyPKiELsXxp-A",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhNzJlNzY4MWNmMTkzNjdmODI4ZWY5IiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTEyMzU3NCwiZXhwIjoxNjU1MTMwNzc0fQ.q1d8Gyk284FuHidtuBhfpTDhLyzVVggnUVn-xVDsgJE",
 						"type": "text"
 					}
 				],
@@ -242,7 +242,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjJhNTk4ZGNmODcyMmYxZDY3ZWYxYTNjIiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTA0MTY2NSwiZXhwIjoxNjU1MDQ4ODY1fQ.6c6vvyPwScWdejFpeCdAlbzuZLHAilM1TXDuLJON8bE",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjJhNzJlNzY4MWNmMTkzNjdmODI4ZWY5IiwiYWNjbmFtZSI6IkFkbWluMSIsInR5cGUiOiJhZG1pbiIsImlhdCI6MTY1NTEyMzU3NCwiZXhwIjoxNjU1MTMwNzc0fQ.q1d8Gyk284FuHidtuBhfpTDhLyzVVggnUVn-xVDsgJE",
 						"type": "text"
 					}
 				],
@@ -285,7 +285,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"accname\": \"Admin1\",\r\n   \"password\": \"abc123\",\r\n   \"newPassword\":\"abc123\"\r\n}",
+					"raw": "{\r\n   \"accname\": \"Admin1\",\r\n   \"password\": \"abc123\",\r\n   \"newPassword\": \"abc123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -322,7 +322,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"type\": \"admin\"\r\n}",
+					"raw": "{\r\n    \"accname\": \"Admin1\",\r\n    \"type\": \"admin\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -379,6 +379,37 @@
 							"value": "{\"name\":\"mohit\",\"password\":\"password4\",\"profession\":\"teacher\",\"id\":4}",
 							"disabled": true
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"accname\": \"User1\",\r\n   \"password\": \"abc123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Http://127.0.0.1:8081/login",
+					"protocol": "Http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"login"
 					]
 				}
 			},
